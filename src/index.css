@@ -10,6 +10,12 @@
         @apply text-xl hover:text-[#993125] duration-200;
     }
     .nav-logo{
-        @apply text-4xl text-center basis-1/4 cursor-pointer duration-200 flex gap-2 items-center;
+        @apply text-4xl text-center basis-1/4 cursor-pointer duration-200 flex gap-2 items-center  font-bold ;
+    }
+    .filter-opts{
+        @apply text-xl duration-200 hover:bg-[#8f4b3a] h-full flex items-center px-4 rounded-2xl;
+    }
+    .hover-effect{
+        @apply ease-out duration-300 relative -translate-y-2 scale-110
     }
 }

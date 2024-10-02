@@ -7,10 +7,12 @@ import ShowArticle from "./pages/ShowArticle";
 import NewArticle from "./pages/NewArticle";
 import NotFound from "./pages/NotFound";
 import UpdateArticle from "./pages/UpdateArticle";
+import { RemoveScrollBar } from "react-remove-scroll-bar";
 
 function App() {
   return (
     <SnackbarProvider>
+      <RemoveScrollBar />
       <BrowserRouter>
         <Navbar />
         <Routes>
