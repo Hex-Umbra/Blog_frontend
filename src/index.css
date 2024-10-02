@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .navbar {
+        @apply flex justify-center gap-8 max-w-full h-20 bg-[#4B3A8F] items-center text-[#3A8F75];
+    }
+    .nav-link{
+        @apply text-xl hover:text-[#993125] duration-200;
+    }
+    .nav-logo{
+        @apply text-4xl text-center basis-1/4 cursor-pointer duration-200 flex gap-2 items-center;
+    }
+}
