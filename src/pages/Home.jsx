@@ -1,20 +1,21 @@
 import React from "react";
 import FilterOptions from "../components/FilterOptions";
 import HeroSection from "../components/HeroSection";
-import Article from "../components/Article";
+import FetchArticle from "../components/FetchArticle";
+import { RemoveScrollBar } from "react-remove-scroll-bar";
 
 export default function Home() {
   return (
     <div className="overflow-hidden">
-      <section className="bg-[#42337D] h-[50vh] w-full">
+      <RemoveScrollBar />
+      <section className="main-section">
         <HeroSection />
       </section>
       <FilterOptions />
-      <div className="bg-[#2F2459] h-[34vh] w-full grid grid-cols-4 items-center">
-        <Article />
-        <Article />
-        <Article />
-        <Article />
+      <div className="bg-[#2F2459] flex justify-center">
+        <div>
+          <FetchArticle limit={3} hidden="invisible" />
+        </div>
       </div>
     </div>
   );

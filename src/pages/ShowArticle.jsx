@@ -1,7 +1,12 @@
 import React from 'react'
+import { RemoveScrollBar } from "react-remove-scroll-bar";
+
 
 export default function ShowArticle() {
   return (
-    <div>ShowArticle</div>
+    <section className="main-section h-[100vh]">
+      <RemoveScrollBar />
+
+    </section>
   )
 }
