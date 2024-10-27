@@ -4,7 +4,7 @@ import Article from "./Article";
 import { Link } from "react-router-dom";
 
 const BASE_URL = import.meta.env.VITE_FETCH_URL;
-const ROUTE_URL = `${BASE_URL}/articles`;
+const ROUTE_URL = `${BASE_URL}/articles/`;
 
 export default function FetchArticle({ limit,hidden = "visible" }) {
   const [articles, setArticles] = useState([]);

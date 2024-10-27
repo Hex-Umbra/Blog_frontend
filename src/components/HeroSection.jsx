@@ -8,7 +8,7 @@ export default function HeroSection() {
       <div>
         <img
           className="h-80 mr-5 m-6 rounded-xl"
-          src="public/assets/nik-lUbIun4IL38-unsplash.jpg"
+          src="/assets/nik-lUbIun4IL38-unsplash.jpg"
           alt=""
         />
       </div>
@@ -18,7 +18,7 @@ export default function HeroSection() {
           articles about your favorite games ! Join us now by creating your
           first ever article !
         </p>
-        <button className="absolute right-32 top-6 drop-shadow-lg">
+        <button className="absolute right-30 top-10 drop-shadow-lg">
         </button>
         <Link to={"/articles/new"} className="absolute right-32 top-6 drop-shadow-lg">
           <FaLongArrowAltRight size={60} color="#763A8F"/>

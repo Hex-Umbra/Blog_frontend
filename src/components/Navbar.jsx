@@ -1,6 +1,7 @@
 import { IoMdSearch } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { IoLogoGameControllerA } from "react-icons/io";
+import { CgProfile } from "react-icons/cg";
 
 export default function Navbar() {
   return (
@@ -15,16 +16,10 @@ export default function Navbar() {
         <Link to={"/"} className="nav-link">
           Home
         </Link>
-        <Link
-          to={"/articles"}
-          className="nav-link"
-        >
+        <Link to={"/articles"} className="nav-link">
           Browse articles
         </Link>
-        <Link
-          to={"/articles/new"}
-          className="nav-link"
-        >
+        <Link to={"/articles/new"} className="nav-link">
           Write an Article
         </Link>
       </div>
@@ -37,6 +32,15 @@ export default function Navbar() {
           type="text"
           placeholder="Search"
         />
+      </div>
+      <div>
+        <div className="flex gap-4 mr-4">
+          <Link to={"/login"}>Login</Link>
+          <Link to={"/register"}>Register</Link>
+        </div>
+        <Link to={"/profile"}>
+          <CgProfile size={40}/>
+        </Link>
       </div>
     </nav>
   );
